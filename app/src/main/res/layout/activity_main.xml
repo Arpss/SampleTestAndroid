@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/fragment_user_info_progress_layout"
+        layout="@layout/common_loading_layout" />
+    <include
+        android:id="@+id/fragment_user_info_connection_issue_layout"
+        layout="@layout/common_connection_issue_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        />
+
+</RelativeLayout>
